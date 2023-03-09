@@ -1,11 +1,8 @@
 function restart() {
-  f.remainsFood.value = f.weightText.value;
+  var res = f.weightText.value * 150;
+  f.remainsFood.value = res;
 }
 
 function feedUpdate() {
   f.remainsFood.value -= f.feedText.value;
-}
-
-function calc(weight) {
-  var res = weight * 150;
 }

@@ -21,19 +21,25 @@
   <div id="main">
     <form id="f">
       <label>משקל משוער:</label>
-      <input type="text" id="weightText" placeholder="0" value="3" />
-      <input type="button" value="אפס חישוב וקבע משקל" onclick="restart()" />
+      <input type="text" id="weightText" value="" placeholder="0" />
+      <input
+        type="button"
+        id="weightBtn"
+        value="אפס חישוב וקבע משקל"
+        onclick="restart()"
+      />
       <br />
       <br />
       <h3>נותר לאכול:</h3>
-      <input id="remainsFood" type="text" value="300" readonly />
+      <input id="remainsFood" type="text" value="" readonly />
       <br />
       <br />
 
       <h3>עדכון אכילה:</h3>
-      <input id="feedText" type="text" value="300" />
+      <input id="feedText" type="text" value="" placeholder="0" />
       <input
         id="feedBtn"
+        class="btn btn-primary"
         type="button"
         value="עדכן אכילה"
         onclick="feedUpdate()"
@@ -42,17 +48,4 @@
   </div>
 
   <script src="script.js"></script>
-  <!-- <script>
-    function restart() {
-      f.remainsFood.value = f.weightText.value;
-    }
-
-    function feedUpdate() {
-      f.remainsFood.value -= f.feedText.value;
-    }
-
-    function calc(weight) {
-      var res = weight * 150;
-    } -->
-  </script>
 </body>
