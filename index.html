@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he-IL" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>מעקב האכלת תינוק</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://cdn.w600.comps.canstockphoto.co.il/%D7%AA%D7%99%D7%A0%D7%95%D7%A7-%D7%90%D7%99%D7%A7%D7%95%D7%9F-%D7%A1%D7%99%D7%92%D7%A0%D7%95%D7%9F-%D7%A9%D7%97%D7%95%D7%A8-%D7%A4%D7%A9%D7%95%D7%98-%D7%95%D7%A7%D7%98%D7%95%D7%A8-%D7%A7%D7%9C%D7%99%D7%A4-%D7%90%D7%A8%D7%98_csp50121856.jpg"
+    />
+    <link rel="stylesheet" type="text/css" href="design.css" />
+  </head>
+  <body></body>
+</html>
+
+<body>
+  <h1>מעקב האכלת תינוק</h1>
+
+  <div id="main">
+    <form id="f">
+      <label>משקל משוער:</label>
+      <input type="text" id="weightText" placeholder="0" value="3" />
+      <input type="button" value="אפס חישוב וקבע משקל" onclick="restart()" />
+      <br />
+      <br />
+      <h3>נותר לאכול:</h3>
+      <input id="remainsFood" type="text" value="300" readonly />
+      <br />
+      <br />
+
+      <h3>עדכון אכילה:</h3>
+      <input id="feedText" type="text" value="300" />
+      <input
+        id="feedBtn"
+        type="button"
+        value="עדכן אכילה"
+        onclick="feedUpdate()"
+      />
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- <script>
+    function restart() {
+      f.remainsFood.value = f.weightText.value;
+    }
+
+    function feedUpdate() {
+      f.remainsFood.value -= f.feedText.value;
+    }
+
+    function calc(weight) {
+      var res = weight * 150;
+    } -->
+  </script>
+</body>
